@@ -1,0 +1,11 @@
+@charset "UTF-8";
+body {
+  background-color:#f0f8ff;
+}
+h1 {
+  color:#006400;
+}
+header {
+  highter:40px;
+  background-color:#66cdaa;
+}
