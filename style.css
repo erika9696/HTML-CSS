@@ -27,6 +27,33 @@ a {
   display: flex;
 justify-content: space-between;
 }
+/* table {
+  color: #dc0006;
+} */
+
+.burnner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.burnner_1{
+  /* width: auto;
+  height: auto; */
+  margin: 10px;
+  padding: 10px;
+/* justify-content: space-between; */
+
+}
+
+
+
+body {
+background-image: url(https://amatsuki.jp/s3/skiyaki/uploads/link/image/12168/bg_body.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #dc0006;
 
 footer {
   background:#AC3846;
@@ -34,7 +61,14 @@ footer {
   padding: 30px 0;
 }
 
-footer p {
-  color: #fff;
-  font-size: 0.5px;
+footer{
+  display: flex;
+  justify-content: center;
+}
+
+.footer_text{
+  color: #ffff;
+  font-size: 5px;
+  margin: 10px;
+  padding: 10px;
 }
