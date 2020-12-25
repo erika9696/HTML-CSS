@@ -25,7 +25,8 @@ a {
 
 .gnavi_li {
   display: flex;
-justify-content: space-between;
+justify-content: center;
+ padding-right: 10px;
 }
 /* table {
   color: #dc0006;
@@ -37,8 +38,6 @@ justify-content: space-between;
 }
 
 .burnner_1{
-  /* width: auto;
-  height: auto; */
   margin: 10px;
   padding: 10px;
 /* justify-content: space-between; */
@@ -55,20 +54,26 @@ background-size: cover;
   border-style: solid;
   border-color: #dc0006;
 
-footer {
+/* footer {
   background:#AC3846;
   text-align:center;
   padding: 30px 0;
-}
+} */
 
-footer{
+.text1 {
   display: flex;
+  align-items: center;
   justify-content: center;
 }
 
-.footer_text{
+.footer_text1{
   color: #ffff;
   font-size: 5px;
   margin: 10px;
   padding: 10px;
+
+}
+
+.footer_text3 {
+
 }
