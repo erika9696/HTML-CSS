@@ -12,9 +12,9 @@ a {
   justify-content: center;
 
 }
-.sitelogo {
-  width: 65px;
-
+.logo.root {
+  width: 10px;
+  height:10px;
 }
 
 .gnavi_ul {
@@ -28,9 +28,6 @@ a {
 justify-content: center;
  padding-right: 10px;
 }
-/* table {
-  color: #dc0006;
-} */
 
 .burnner {
   display: flex;
@@ -51,16 +48,9 @@ background-size: cover;
   border-width: 1px;
   border-style: solid;
   border-color: #dc0006;
-
-/* footer {
-  background:#AC3846;
-  text-align:center;
-  padding: 30px 0;
-} */
-
-.text1 {
+}
+.text {
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
@@ -69,5 +59,4 @@ background-size: cover;
   font-size: 5px;
   margin: 10px;
   padding: 10px;
-
 }
