@@ -53,7 +53,7 @@ img {
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
-    border: 1px #dc0006;
+    
 }
 /* .wrapper {
     max-width: 1100px;
@@ -66,11 +66,11 @@ img {
     background-image: url(https://amatsuki.jp/s3/skiyaki/uploads/link/image/12168/bg_body.jpg); 
     background-repeat: no-repeat;
     background-size: cover;
+
 }
 .bg {
-    background-image: url(images/TOP.jpg);
-    background-repeat: no-repeat;
+    /* background-image: url(images/TOP.jpg);
+    background-repeat: no-repeat; */
     /* background-size: contain; */
-    max-width: 1100px;
-    max-height: 950px;
+  
 }
