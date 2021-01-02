@@ -12,9 +12,9 @@ a {
   justify-content: center;
 
 }
-.sitelogo {
-  width: 65px;
-
+.logo.root {
+  width: 10px;
+  height:10px;
 }
 
 .gnavi_ul {
@@ -25,16 +25,38 @@ a {
 
 .gnavi_li {
   display: flex;
-justify-content: space-between;
+justify-content: center;
+ padding-right: 10px;
 }
 
-footer {
-  background:#AC3846;
-  text-align:center;
-  padding: 30px 0;
+.burnner {
+  display: flex;
+  justify-content: center;
 }
 
-footer p {
-  color: #fff;
-  font-size: 0.5px;
+.burnner_1{
+  margin: 10px;
+  padding: 10px;
+}
+
+
+
+body {
+background-image: url(https://amatsuki.jp/s3/skiyaki/uploads/link/image/12168/bg_body.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #dc0006;
+}
+.text {
+  display: flex;
+  justify-content: center;
+}
+
+.footer_text1{
+  color: #ffff;
+  font-size: 5px;
+  margin: 10px;
+  padding: 10px;
 }
