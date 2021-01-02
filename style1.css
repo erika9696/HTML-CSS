@@ -10,7 +10,11 @@ body {
     border: solid 1px;
     border-color:  #dc0006;
     margin: 24px; */
-
+    background-image: url(https://amatsuki.jp/s3/skiyaki/uploads/link/image/12168/bg_body.jpg);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 a {
@@ -63,13 +67,14 @@ img {
     background-image: url(images/TOP.jpg);
     background-size: contain;
     background-repeat: no-repeat;
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
     
 }
-#home {
-    background-image: url(https://amatsuki.jp/s3/skiyaki/uploads/link/image/12168/bg_body.jpg); 
-    background-repeat: no-repeat;
-    background-position: center 400px;
-}
+/* #home { */
+    /* background-position: center 400px; */
+/* } */
 
 .wrapper {
     display: grid;
