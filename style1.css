@@ -6,6 +6,11 @@ html {
 
 body {
     color: #432;
+    /* display: inline-block;
+    border: solid 1px;
+    border-color:  #dc0006;
+    margin: 24px; */
+
 }
 
 a {
@@ -17,10 +22,6 @@ img {
 
 /*---------------- */
 
-.logo {
-    width: 210px;
-    height: 14px;
-}
 
 .main-nav {
     display: flex;
@@ -28,7 +29,12 @@ img {
     margin-top: 24px;
     list-style: none;
 }
-
+/*ロゴの位置を変える方法調べる*/
+.logo {
+    width: 210px;
+    height: 14px;
+    
+}
 .main-nav li {
     margin-left: 10px;
     justify-content: center;
@@ -48,6 +54,11 @@ img {
     margin: 14px;    
 }
 
+.button {
+    background: #0db;
+    
+}
+
 .big-bg {
     background-image: url(images/TOP.jpg);
     background-size: contain;
@@ -60,24 +71,29 @@ img {
     background-position: center 400px;
 }
 
-/* .bg {
-    background-image: url(images/TOP.jpg);
-    background-repeat: no-repeat; */
-    /* background-size: contain;
-  
-} */
-
 .wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
     grid-template-rows: 100px 450px 300px;
     margin: 10px 250px 20px;
-
-
 }
 
 .item {
-
     background: rgba(200, 200,200, 0.5);
+    text-align: left;
+}
+
+h2 {
+    border-bottom: double silver;
+    line-height: 4;
+    color: #000000;
+}
+
+.item p {
+    border-bottom: solid silver;
+    font-size: 15px;
+}
+.item a {
+    color: #000000;
 }
