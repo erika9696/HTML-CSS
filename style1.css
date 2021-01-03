@@ -85,7 +85,7 @@ img {
 }
 
 .item {
-    background: rgba(200, 200,200, 0.5);
+    background: rgba(255,255,255, 0.88);
     text-align: left;
 }
 
@@ -95,10 +95,8 @@ h2 {
     color: #000000;
 }
 
-.item p {
-    border-bottom: solid silver;
-    font-size: 15px;
-}
 .item a {
+    border-bottom: double silver;
+    font-size: 15px;
     color: #000000;
 }
