@@ -29,19 +29,20 @@ img {
 
 .main-nav {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     margin-top: 24px;
     list-style: none;
 }
 /*ロゴの位置を変える方法調べる*/
-.logo {
-    width: 210px;
-    height: 14px;
-    
+.log{
+    justify-items: left;
+
 }
 .main-nav li {
     margin-left: 10px;
     justify-content: center;
+
 }
 .main-nav a {
     color: #ffffff;
@@ -52,8 +53,9 @@ img {
 
 .pagetop {
     display: flex;
+    flex-direction: column;
     background-color: #dc0006;
-    height: 74px;
+    height: 60px;
     justify-content: center;
     margin: 14px;    
 }
@@ -90,13 +92,13 @@ img {
 }
 
 h2 {
-    border-bottom: double silver;
+    border-bottom: solid white;
     line-height: 4;
     color: #000000;
 }
 
 .item a {
-    border-bottom: double silver;
-    font-size: 15px;
+    border-bottom: solid silver;
+    font-size: 17px;
     color: #000000;
 }
