@@ -17,7 +17,9 @@ a {
     text-decoration: none;
 }
 img {
+    width: 100%;
     max-width: 100%;
+    height: auto;
 }
 
 /*---------------- */
@@ -25,18 +27,13 @@ img {
 
 .main-nav {
     display: flex;
-    justify-content: space-between;
-    margin-top: 24px;
+    justify-content: space-around;
+    margin: 24px 230px;
     list-style: none;
-}
-/*ロゴの位置を変える方法調べる*/
-.logo {
-    position: left;
-    
 }
 .main-nav li {
     margin-left: 10px;
-    justify-content: center;
+    /* justify-content: center; */
 }
 .main-nav a {
     color: #ffffff;
@@ -48,9 +45,16 @@ img {
 .pagetop {
     display: flex;
     background-color: #dc0006;
-    height: 74px;
-    justify-content: center;
+    height: 65px;
+    justify-content: space-around;
     margin: 14px;    
+}
+
+.logo {
+    width: 57px;
+    height:56px;
+    margin: 4px;
+    background-attachment: fixed;
 }
 
 .button {
@@ -83,9 +87,9 @@ img {
 }
 
 .contner {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    grid-template-rows: 100px 100px 100px;
+    display: flex;
+    /* grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-rows: 100px 100px 100px; */
     margin: 20px 250px 20px;
     }
 
@@ -99,23 +103,58 @@ img {
 }
 
 h2 {
-    border-bottom: solid white;
-    line-height: 4;
+    text-align: center;
     color: #000000;
+    margin-top: 18px;
 }
 
-.item p {
-    border-bottom: solid silver;
-    font-size: 15px;
+hr {
+    color: #ffffff;
+    border-style: solid;
+    margin: 18px 5px ;
 }
+
 .item a {
     color: #000000;
 }
 
+.item p {
+    font-size: 0.8rem;
+}
+
+.button2 {
+    
+    border: solid 1px #dc0006;
+    border-radius: 20px;
+    margin: 2px;
+    padding: 2px;
+}
+
 @media (max-width: 600px){
-    .wrapper {
+    .contner {
     
     flex-direction: column;
     }
+    
+    .logo {
+        width: 100%;
 
+    }
+
+    .main-nav {
+        display: inline-block;
+        justify-content: space-around;
+        margin: 24px 230px;
+        list-style: none;
+    }
+    .main-nav li {
+        margin-left: 10px;
+    }
+    #home {
+        width: 100%;
+    }
+
+    .item {
+        width: 100%;
+    }
 }
