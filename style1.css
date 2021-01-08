@@ -38,6 +38,7 @@ img {
 .log{
     justify-items: left;
 
+
 }
 .main-nav li {
     margin-left: 10px;
@@ -67,26 +68,41 @@ img {
 
 .big-bg {
     background-image: url(images/TOP.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
+
     
 }
-/* #home { */
-    /* background-position: center 400px; */
-/* } */
+#home {
+    background-image: url(https://amatsuki.jp/s3/skiyaki/uploads/link/image/12168/bg_body.jpg); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 
 .wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 20px;
-    grid-template-rows: 100px 450px 300px;
+    grid-template-rows: 450px 300px;
     margin: 10px 250px 20px;
 }
 
+.contner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-rows: 100px 100px 100px;
+    margin: 20px 250px 20px;
+    }
+
+    .item2 {
+        padding-left: 20px;
+    }
+
 .item {
+
     background: rgba(255,255,255, 0.88);
     text-align: left;
 }
@@ -101,4 +117,12 @@ h2 {
     border-bottom: solid silver;
     font-size: 17px;
     color: #000000;
+}
+
+@media (max-width: 600px){
+    .wrapper {
+    
+    flex-direction: column;
+    }
+
 }
