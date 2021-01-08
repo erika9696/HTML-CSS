@@ -10,7 +10,11 @@ body {
     border: solid 1px;
     border-color:  #dc0006;
     margin: 24px; */
-
+    background-image: url(https://amatsuki.jp/s3/skiyaki/uploads/link/image/12168/bg_body.jpg);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 a {
@@ -25,18 +29,21 @@ img {
 
 .main-nav {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     margin-top: 24px;
     list-style: none;
 }
 /*ロゴの位置を変える方法調べる*/
-.logo {
-    position: left;
-    
+.log{
+    justify-items: left;
+
+
 }
 .main-nav li {
     margin-left: 10px;
     justify-content: center;
+
 }
 .main-nav a {
     color: #ffffff;
@@ -47,8 +54,9 @@ img {
 
 .pagetop {
     display: flex;
+    flex-direction: column;
     background-color: #dc0006;
-    height: 74px;
+    height: 60px;
     justify-content: center;
     margin: 14px;    
 }
@@ -62,8 +70,7 @@ img {
     background-image: url(images/TOP.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: left ;
-    min-height: 100vh;
+
     
 }
 #home {
@@ -73,6 +80,7 @@ img {
     background-size: cover;
     background-attachment: fixed;
 }
+
 
 .wrapper {
     display: grid;
@@ -94,7 +102,8 @@ img {
     }
 
 .item {
-    background: rgba(255, 255,255, 0.8);
+
+    background: rgba(255,255,255, 0.88);
     text-align: left;
 }
 
@@ -104,11 +113,9 @@ h2 {
     color: #000000;
 }
 
-.item p {
-    border-bottom: solid silver;
-    font-size: 15px;
-}
 .item a {
+    border-bottom: solid silver;
+    font-size: 17px;
     color: #000000;
 }
 
