@@ -10,18 +10,16 @@ body {
     border: solid 1px;
     border-color:  #dc0006;
     margin: 24px; */
-    background-image: url(https://amatsuki.jp/s3/skiyaki/uploads/link/image/12168/bg_body.jpg);
-    background-repeat: no-repeat;
-    background-position: left top;
-    background-attachment: fixed;
-    background-size: cover;
+
 }
 
 a {
     text-decoration: none;
 }
 img {
+    width: 100%;
     max-width: 100%;
+    height: auto;
 }
 
 /*---------------- */
@@ -29,21 +27,12 @@ img {
 
 .main-nav {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-top: 24px;
+    justify-content: space-around;
     list-style: none;
 }
-/*ロゴの位置を変える方法調べる*/
-.log{
-    justify-items: left;
-
-
-}
 .main-nav li {
-    margin-left: 10px;
-    justify-content: center;
-
+    margin-left: 5px;
+    /* justify-content: center; */
 }
 .main-nav a {
     color: #ffffff;
@@ -54,11 +43,17 @@ img {
 
 .pagetop {
     display: flex;
-    flex-direction: column;
     background-color: #dc0006;
-    height: 60px;
-    justify-content: center;
+    height: 65px;
+    justify-content: space-around;
     margin: 14px;    
+}
+
+.logo {
+    width: 57px;
+    height:56px;
+    margin: 4px;
+    background-attachment: fixed;
 }
 
 .button {
@@ -70,7 +65,8 @@ img {
     background-image: url(images/TOP.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-
+    background-position: left ;
+    min-height: 100vh;
     
 }
 #home {
@@ -81,19 +77,18 @@ img {
     background-attachment: fixed;
 }
 
-
 .wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 20px;
     grid-template-rows: 450px 300px;
-    margin: 10px 250px 20px;
+    margin: 10px 10px 20px;
 }
 
 .contner {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    grid-template-rows: 100px 100px 100px;
+    display: flex;
+    /* grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-rows: 100px 100px 100px; */
     margin: 20px 250px 20px;
     }
 
@@ -102,27 +97,65 @@ img {
     }
 
 .item {
-
-    background: rgba(255,255,255, 0.88);
+    background: rgba(255, 255,255, 0.8);
     text-align: left;
 }
 
 h2 {
-    border-bottom: solid white;
-    line-height: 4;
+    text-align: center;
     color: #000000;
+    margin-top: 18px;
+}
+
+hr {
+    color: #ffffff;
+    border-style: solid;
+    margin: 18px 5px ;
 }
 
 .item a {
-    border-bottom: solid silver;
-    font-size: 17px;
     color: #000000;
 }
 
+.item p {
+    font-size: 0.8rem;
+}
+
+.button2 {
+    
+    border: solid 1px #dc0006;
+    border-radius: 20px;
+    margin: 2px;
+    padding: 2px;
+}
+
 @media (max-width: 600px){
-    .wrapper {
+    .contner {
     
     flex-direction: column;
     }
+    
+    .logo {
+        width: 100%;
 
+    }
+
+    .main-nav {
+        display: inline-block;
+        justify-content: space-around;
+        margin: 24px 230px;
+        list-style: none;
+    }
+    .main-nav li {
+        margin-left: 10px;
+    }
+    #home {
+        width: 100%;
+    }
+
+    .item {
+        width: 100%;
+    }
+
+    
 }
