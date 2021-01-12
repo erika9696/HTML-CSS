@@ -28,11 +28,10 @@ img {
 .main-nav {
     display: flex;
     justify-content: space-around;
-    margin: 24px 230px;
     list-style: none;
 }
 .main-nav li {
-    margin-left: 10px;
+    margin-left: 5px;
     /* justify-content: center; */
 }
 .main-nav a {
@@ -83,7 +82,7 @@ img {
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 20px;
     grid-template-rows: 450px 300px;
-    margin: 10px 250px 20px;
+    margin: 10px 10px 20px;
 }
 
 .contner {
@@ -157,4 +156,6 @@ hr {
     .item {
         width: 100%;
     }
+
+    
 }
