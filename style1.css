@@ -79,10 +79,11 @@ img {
 
 .wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
     grid-template-rows: 450px 300px;
     margin: 10px 10px 20px;
+    
 }
 
 .contner {
@@ -98,7 +99,7 @@ img {
 
 .item {
     background: rgba(255, 255,255, 0.8);
-    text-align: left;
+    text-align: start;
 }
 
 h2 {
