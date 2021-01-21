@@ -130,16 +130,22 @@ hr {
     padding: 2px;
 }
 
-@media (max-width: 600px){
+@media (max-width: 800px){
     .contner {
-    
     flex-direction: column;
     }
     
     .logo {
         width: 100%;
-
     }
+
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: auto;
+    
+    }
+
 
     .main-nav {
         display: inline-block;
@@ -158,5 +164,11 @@ hr {
         width: 100%;
     }
 
-    
+    .big-bg {
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-position: left ;
+        min-height: 100vh;
+        
+    }
 }
