@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    
+    <script src="jquery-3.5.1.min.js"></script>
     <style>
     
         body {
@@ -37,44 +37,47 @@
     color: #666;
 }
 
-#contents {
-  z-index: 0;
-  font-size: 16px;
+#retry{
+margin:auto;
 }
 
-.modal{
- display: none;
- width: 500px;
- height: 300px;
- margin: 0;
- padding: 0;
- background-color: #ffffff;
- color: #666666;
- position:fixed;
- z-index: 2;
+td button{
+    background-color: darkblue;
+    color: #fff;
+    font-size: 80%px;
+    padding: 10px 30px;
 }
 
+ endtext{
+    font-size: 3em;
+}
+ 
     </style>
 </head>
 <body>
- 
+
+
+  
     <p id="count">60</p>
     <div id="wrap">
-    <p id="text"></p>
-    
-  </div>
+        <p id="text"></p>
+    </div>
     <button id="start">スタート</button>
+
+    <div id="end">
+        <p></p>
+    </div>  
+    
+ <table id="retry">
+     <tr>
+        <td><button class="retry1">もう一度</button></td>
+         <td><button>やめる</button></td>
+    </tr>
+</table>
+
 </head>
 
-<div class="modal">
-  <div id="contents">
- <p>ゲーム終了！</p>
-  </div>
-</div>
-
-
-  <script src="jquery-3.5.1.min.js"></script>
-
+<body>
    <script>
 const wrap = document.getElementById('wrap');
 const start = document.getElementById('start');
@@ -141,7 +144,7 @@ const rankCheck = rank => {
   
    
  if(score < 100) {
-    text = 'あなたのランクはCです。\nBランクまであと${100 - score}文字です。';
+    text = `あなたのランクはCです。\nBランクまであと${100 - score}文字です。`;
   } else if(score < 200) {
     text = `あなたのランクはBです。\nAランクまであと${200 - score}文字です。`;    
   } else if(score < 300) {
@@ -151,27 +154,37 @@ const rankCheck = rank => {
   }
   
    
-  return `${score}文字打てました！\n${text}\n【OK】リトライ／【キャンセル】終了`;
-
+  return`${score}文字打てました！\n${text}\n`
+//   【OK】リトライ／【キャンセル】終了
 }; 
 
 const gameOver = id => {
     clearInterval(id);
+
+    const p =document.getElementById('end');
+    end.textContent = rankCheck(score);
+    
+
+    $('#text').hide();
+    $('#warp').hide();
+    $('#count').hide();
+
+    $('#retry').show(1000);
     // const result = confirm(rankCheck(score));
 
-
-
-
-    if(result) window.location.reload();
+    $('.retry1').click(function(){
+        location.reload(); 
+    });
+    // if(result) window.location.reload();
 };
 
 const timer = () => {
 
-    let time = 60;
+    let time = 5;
     const count = document.getElementById('count');
 
   const id = setInterval(() => {
-    if(time <= 0) gameOver(id);
+    if(time <= 0) gameOver(id);　//もしタイマーが０になったらゲームオーバー処理をする
 
     count.textContent = time--;  
 
@@ -183,34 +196,12 @@ start.addEventListener('click', () => {
 
     timer();
   createText();
-  start.style.display = 'none';
+  start.style.display = 'none'; //ボタンのスタートを非表示に
   document.addEventListener('keydown', keyDown);
+  
 })
 
-$(function(){
- 
- //テキストリンクをクリックしたら
-$("#modal-open").click(function(){
-     //body内の最後に<div id="modal-bg"></div>を挿入
-    $("body").append('<div id="modal-bg"></div>');
-
-   //画面中央を計算する関数を実行
-   modalResize();
-
-   //モーダルウィンドウを表示
-       $(".modal,#contents").fadeIn("slow");
-
-   //画面のどこかをクリックしたらモーダルを閉じる
-    $(".modal,#contents").click(function(){
-         $(".modal,#contents").fadeOut("slow",function(){
-        //挿入した<div id="modal-bg"></div>を削除
-             $('#contents').remove() ;
-        });
-
-
-
-
-
+$('#retry').hide();
 
    </script> 
 
@@ -219,5 +210,4 @@ $("#modal-open").click(function(){
 
 
 </body>
-
 </html>
