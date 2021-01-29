@@ -10,22 +10,29 @@
   <body>
 
     <div>
-        <h1 id="title">タイトル</h1>
-        <p class="message">こんにちは</p>
+        <div id="wrap">
+            <h1>サンプルタイトル</h1>
+            <div>
+              <p class="text">こんにちは</p>
+            </div>
+            <p class="text">今日は良い天気ですね！</p>
+          </div>
+          <ul>
+            <li class="list">項目1</li>
+            <li class="list">項目2</li>
+            <li class="list">項目3</li>
+          </ul>
       </div>
 
     <script src="jquery-3.5.1.min.js"></script>
     <script>
         // jQueryを記述する場所
-
-        // console.log("山田二郎");
-        // console.log("17");
-
-        const title = $('#title').text();
-        const list = $('.message').text();
-
-        console.log(title);
+        
+        const list = $('.list').text();
+const list = $('p[text*="こんにちは"]');
+        
         console.log(list);
+        console.log(text);
     </script>
   </body>
 </html>
